@@ -1,0 +1,531 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74HC164 U1
+U 1 1 5E4EE9A6
+P 4550 1650
+F 0 "U1" H 4800 2250 50  0000 C CNN
+F 1 "74HC164" H 4800 2150 50  0000 C CNN
+F 2 "" H 5450 1350 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT164.pdf" H 5450 1350 50  0001 C CNN
+	1    4550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC164 U2
+U 1 1 5E4EFD21
+P 4550 3300
+F 0 "U2" H 4800 3900 50  0000 C CNN
+F 1 "74HC164" H 4800 3800 50  0000 C CNN
+F 2 "" H 5450 3000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT164.pdf" H 5450 3000 50  0001 C CNN
+	1    4550 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 5E4F0BCB
+P 1850 2150
+F 0 "A1" H 1450 1150 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 1450 1050 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 1850 2150 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 1850 2150 50  0001 C CNN
+	1    1850 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1350 6100 1350
+Wire Wire Line
+	4950 1450 6100 1450
+Wire Wire Line
+	4950 1550 6100 1550
+Wire Wire Line
+	4950 1650 6100 1650
+Wire Wire Line
+	4950 1750 6100 1750
+Wire Wire Line
+	4950 1950 6100 1950
+Wire Wire Line
+	4150 3400 4000 3400
+Wire Wire Line
+	4000 3400 4000 3300
+Wire Wire Line
+	4000 3300 4150 3300
+$Comp
+L power:+5V #PWR?
+U 1 1 5E500ABF
+P 4550 2800
+F 0 "#PWR?" H 4550 2650 50  0001 C CNN
+F 1 "+5V" H 4565 2973 50  0000 C CNN
+F 2 "" H 4550 2800 50  0001 C CNN
+F 3 "" H 4550 2800 50  0001 C CNN
+	1    4550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E501ECF
+P 4550 1150
+F 0 "#PWR?" H 4550 1000 50  0001 C CNN
+F 1 "+5V" H 4565 1323 50  0000 C CNN
+F 2 "" H 4550 1150 50  0001 C CNN
+F 3 "" H 4550 1150 50  0001 C CNN
+	1    4550 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E5026F8
+P 4100 1400
+F 0 "#PWR?" H 4100 1250 50  0001 C CNN
+F 1 "+5V" H 4115 1573 50  0000 C CNN
+F 2 "" H 4100 1400 50  0001 C CNN
+F 3 "" H 4100 1400 50  0001 C CNN
+	1    4100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E502DAF
+P 4100 3050
+F 0 "#PWR?" H 4100 2900 50  0001 C CNN
+F 1 "+5V" H 4115 3223 50  0000 C CNN
+F 2 "" H 4100 3050 50  0001 C CNN
+F 3 "" H 4100 3050 50  0001 C CNN
+	1    4100 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3100 4100 3100
+Wire Wire Line
+	4100 3100 4100 3050
+Wire Wire Line
+	4150 1450 4100 1450
+Wire Wire Line
+	4100 1450 4100 1400
+Wire Wire Line
+	4000 3300 4000 2500
+Connection ~ 4000 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5E505197
+P 4550 2250
+F 0 "#PWR?" H 4550 2000 50  0001 C CNN
+F 1 "GND" H 4555 2077 50  0000 C CNN
+F 2 "" H 4550 2250 50  0001 C CNN
+F 3 "" H 4550 2250 50  0001 C CNN
+	1    4550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E5054AF
+P 4550 3900
+F 0 "#PWR?" H 4550 3650 50  0001 C CNN
+F 1 "GND" H 4555 3727 50  0000 C CNN
+F 2 "" H 4550 3900 50  0001 C CNN
+F 3 "" H 4550 3900 50  0001 C CNN
+	1    4550 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3000 5100 3000
+Wire Wire Line
+	5100 3000 5100 2150
+Wire Wire Line
+	5100 2150 6100 2150
+Wire Wire Line
+	4950 3100 5200 3100
+Wire Wire Line
+	5200 3100 5200 2250
+Wire Wire Line
+	4950 3200 5300 3200
+Wire Wire Line
+	5300 3200 5300 2350
+Wire Wire Line
+	5300 2350 6100 2350
+Wire Wire Line
+	4950 3300 5400 3300
+Wire Wire Line
+	5400 3300 5400 2450
+Wire Wire Line
+	5400 2450 6100 2450
+Wire Wire Line
+	6100 2550 5500 2550
+Wire Wire Line
+	5500 2550 5500 3400
+Wire Wire Line
+	5500 3400 4950 3400
+Wire Wire Line
+	4950 3500 5600 3500
+Wire Wire Line
+	5600 3500 5600 2650
+Wire Wire Line
+	5600 2650 6100 2650
+Wire Wire Line
+	4950 3600 5700 3600
+Wire Wire Line
+	5700 3600 5700 2750
+Wire Wire Line
+	5700 2750 6100 2750
+NoConn ~ 5100 3700
+Wire Wire Line
+	5100 3700 4950 3700
+Wire Wire Line
+	5000 2050 6100 2050
+Wire Wire Line
+	4950 2050 5000 2050
+Connection ~ 5000 2050
+Wire Wire Line
+	4000 2500 5000 2500
+Wire Wire Line
+	5000 2500 5000 2050
+Text Label 5950 3150 2    50   ~ 0
+CE
+Wire Wire Line
+	6100 3150 5950 3150
+Text Label 5950 2950 2    50   ~ 0
+WE
+Text Label 5950 3050 2    50   ~ 0
+OE
+Wire Wire Line
+	5200 2250 6100 2250
+Wire Wire Line
+	4950 1850 6100 1850
+Wire Wire Line
+	6100 2950 5950 2950
+Wire Wire Line
+	6100 3050 5950 3050
+$Comp
+L power:GND #PWR?
+U 1 1 5E51CCD4
+P 6500 3350
+F 0 "#PWR?" H 6500 3100 50  0001 C CNN
+F 1 "GND" H 6505 3177 50  0000 C CNN
+F 2 "" H 6500 3350 50  0001 C CNN
+F 3 "" H 6500 3350 50  0001 C CNN
+	1    6500 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E51D989
+P 6500 1150
+F 0 "#PWR?" H 6500 1000 50  0001 C CNN
+F 1 "+5V" H 6515 1323 50  0000 C CNN
+F 2 "" H 6500 1150 50  0001 C CNN
+F 3 "" H 6500 1150 50  0001 C CNN
+	1    6500 1150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1200 1550
+NoConn ~ 1200 1650
+Wire Wire Line
+	1200 1550 1350 1550
+Wire Wire Line
+	1200 1650 1350 1650
+NoConn ~ 2500 1950
+NoConn ~ 2500 1650
+NoConn ~ 2500 1550
+NoConn ~ 1950 1000
+NoConn ~ 1750 1000
+Wire Wire Line
+	1750 1000 1750 1150
+Wire Wire Line
+	1950 1000 1950 1150
+$Comp
+L power:+5V #PWR?
+U 1 1 5E527514
+P 2050 1150
+F 0 "#PWR?" H 2050 1000 50  0001 C CNN
+F 1 "+5V" H 2065 1323 50  0000 C CNN
+F 2 "" H 2050 1150 50  0001 C CNN
+F 3 "" H 2050 1150 50  0001 C CNN
+	1    2050 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1550 2350 1550
+Wire Wire Line
+	2500 1650 2350 1650
+Wire Wire Line
+	2500 1950 2350 1950
+$Comp
+L power:GND #PWR?
+U 1 1 5E52B0E9
+P 1900 3250
+F 0 "#PWR?" H 1900 3000 50  0001 C CNN
+F 1 "GND" H 1905 3077 50  0000 C CNN
+F 2 "" H 1900 3250 50  0001 C CNN
+F 3 "" H 1900 3250 50  0001 C CNN
+	1    1900 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3250 1900 3200
+Wire Wire Line
+	1900 3200 1850 3200
+Wire Wire Line
+	1850 3200 1850 3150
+Wire Wire Line
+	1900 3200 1950 3200
+Wire Wire Line
+	1950 3200 1950 3150
+Connection ~ 1900 3200
+Wire Wire Line
+	4150 1950 3900 1950
+Wire Wire Line
+	3900 1950 3900 3600
+Wire Wire Line
+	3900 3600 4150 3600
+Text Label 3750 1950 2    50   ~ 0
+CLK
+Text Label 3950 1700 2    50   ~ 0
+DATA
+Wire Wire Line
+	4150 1650 4050 1650
+Wire Wire Line
+	4050 1650 4050 1700
+Wire Wire Line
+	4050 1700 3950 1700
+Wire Wire Line
+	4150 1750 4050 1750
+Wire Wire Line
+	4050 1750 4050 1700
+Connection ~ 4050 1700
+Text Label 1150 1750 2    50   ~ 0
+CLK
+Wire Wire Line
+	1150 1750 1350 1750
+$Comp
+L Device:R R1
+U 1 1 5E53E45B
+P 2600 2000
+F 0 "R1" H 2530 1954 50  0000 R CNN
+F 1 "10k" H 2530 2045 50  0000 R CNN
+F 2 "" V 2530 2000 50  0001 C CNN
+F 3 "~" H 2600 2000 50  0001 C CNN
+	1    2600 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Memory_EEPROM:28C256 U3
+U 1 1 5E4F9E70
+P 6500 2250
+F 0 "U3" H 6700 3450 50  0000 C CNN
+F 1 "28C256" H 6700 3350 50  0000 C CNN
+F 2 "" H 6500 2250 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0006.pdf" H 6500 2250 50  0001 C CNN
+	1    6500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E5478E7
+P 2900 2100
+F 0 "R2" H 2830 2054 50  0000 R CNN
+F 1 "10k" H 2830 2145 50  0000 R CNN
+F 2 "" V 2830 2100 50  0001 C CNN
+F 3 "~" H 2900 2100 50  0001 C CNN
+	1    2900 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E54EDFA
+P 3200 2200
+F 0 "R3" H 3130 2154 50  0000 R CNN
+F 1 "10k" H 3130 2245 50  0000 R CNN
+F 2 "" V 3130 2200 50  0001 C CNN
+F 3 "~" H 3200 2200 50  0001 C CNN
+	1    3200 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 2150 2600 2150
+Text Label 2700 2150 0    50   ~ 0
+WE
+Connection ~ 2600 2150
+Text Label 3000 2250 0    50   ~ 0
+OE
+Text Label 3300 2350 0    50   ~ 0
+CE
+Wire Wire Line
+	2350 2250 2900 2250
+Connection ~ 2900 2250
+Wire Wire Line
+	2350 2350 3200 2350
+Wire Wire Line
+	2600 2150 2700 2150
+Wire Wire Line
+	2900 2250 3000 2250
+Connection ~ 3200 2350
+Wire Wire Line
+	3200 2350 3300 2350
+Wire Wire Line
+	1350 2650 1150 2650
+Wire Wire Line
+	1150 2550 1350 2550
+Wire Wire Line
+	1350 2450 1150 2450
+Wire Wire Line
+	1150 2350 1350 2350
+Wire Wire Line
+	1350 2250 1150 2250
+Wire Wire Line
+	1150 2150 1350 2150
+Wire Wire Line
+	1150 2050 1350 2050
+Wire Wire Line
+	1150 1950 1350 1950
+Text Label 1150 2650 2    50   ~ 0
+IO7
+Text Label 1150 2550 2    50   ~ 0
+IO6
+Text Label 1150 2450 2    50   ~ 0
+IO5
+Text Label 1150 2350 2    50   ~ 0
+IO4
+Text Label 1150 2250 2    50   ~ 0
+IO3
+Wire Wire Line
+	1150 1850 1350 1850
+Text Label 1150 1850 2    50   ~ 0
+IO0
+Text Label 1150 1950 2    50   ~ 0
+IO1
+Text Label 1150 2050 2    50   ~ 0
+IO2
+Text Label 1150 2150 2    50   ~ 0
+IO3
+NoConn ~ 2500 2450
+NoConn ~ 2500 2550
+NoConn ~ 2500 2650
+NoConn ~ 2500 2750
+NoConn ~ 2500 2850
+NoConn ~ 1200 2850
+NoConn ~ 1200 2750
+Wire Wire Line
+	1200 2750 1350 2750
+Wire Wire Line
+	1200 2850 1350 2850
+Wire Wire Line
+	2500 2850 2350 2850
+Wire Wire Line
+	2500 2750 2350 2750
+Wire Wire Line
+	2500 2650 2350 2650
+Wire Wire Line
+	2500 2550 2350 2550
+Wire Wire Line
+	2500 2450 2350 2450
+$Comp
+L power:+5V #PWR?
+U 1 1 5E5AC792
+P 2600 1850
+F 0 "#PWR?" H 2600 1700 50  0001 C CNN
+F 1 "+5V" H 2615 2023 50  0000 C CNN
+F 2 "" H 2600 1850 50  0001 C CNN
+F 3 "" H 2600 1850 50  0001 C CNN
+	1    2600 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E5ACF53
+P 2900 1950
+F 0 "#PWR?" H 2900 1800 50  0001 C CNN
+F 1 "+5V" H 2915 2123 50  0000 C CNN
+F 2 "" H 2900 1950 50  0001 C CNN
+F 3 "" H 2900 1950 50  0001 C CNN
+	1    2900 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E5AD360
+P 3200 2050
+F 0 "#PWR?" H 3200 1900 50  0001 C CNN
+F 1 "+5V" H 3215 2223 50  0000 C CNN
+F 2 "" H 3200 2050 50  0001 C CNN
+F 3 "" H 3200 2050 50  0001 C CNN
+	1    3200 2050
+	1    0    0    -1  
+$EndComp
+Text Label 7050 1350 0    50   ~ 0
+IO0
+Text Label 7050 1450 0    50   ~ 0
+IO1
+Text Label 7050 1550 0    50   ~ 0
+IO2
+Text Label 7050 1650 0    50   ~ 0
+IO3
+Text Label 7050 1750 0    50   ~ 0
+IO4
+Text Label 7050 1850 0    50   ~ 0
+IO5
+Text Label 7050 1950 0    50   ~ 0
+IO6
+Text Label 7050 2050 0    50   ~ 0
+IO7
+Wire Wire Line
+	7050 2050 6900 2050
+Wire Wire Line
+	6900 1950 7050 1950
+Wire Wire Line
+	7050 1850 6900 1850
+Wire Wire Line
+	6900 1750 7050 1750
+Wire Wire Line
+	7050 1650 6900 1650
+Wire Wire Line
+	6900 1550 7050 1550
+Wire Wire Line
+	7050 1450 6900 1450
+Wire Wire Line
+	6900 1350 7050 1350
+Wire Wire Line
+	3750 1950 3900 1950
+Connection ~ 3900 1950
+Wire Notes Line
+	3500 3550 800  3550
+Wire Notes Line
+	800  3550 800  850 
+Text Notes 2650 3450 0    50   ~ 0
+Arduino Nano V3
+Wire Notes Line
+	7350 850  7350 4250
+Wire Notes Line
+	7350 4250 3500 4250
+Wire Notes Line
+	3500 850  3500 4250
+Wire Notes Line
+	800  850  7350 850 
+Text Notes 6000 4100 0    50   ~ 0
+Shift register and EEPROM
+Text Notes 7100 6750 0    50   ~ 0
+Simple Arduino and 74HC164 shift register based EEPROM reader and writer\n
+Text Notes 7400 7500 0    50   ~ 0
+EEPROM programmer
+Text Notes 7300 7250 0    50   ~ 0
+1
+Text Notes 7400 7250 0    50   ~ 0
+1
+Text Notes 8150 7650 0    50   ~ 0
+2020-02-20
+Text Notes 10600 7650 0    50   ~ 0
+1
+$EndSCHEMATC
